@@ -3,12 +3,15 @@ import java.util.*;
 
 public class Main {
 
+
+    //update
     public static void update(int marks[]){
         for(int i = 0; i<marks.length;i++){
             marks[i] = marks[i]+1;
         }
     }
 
+//get Larger and Smaller
     public static int getLargest(int numbers[]){
         int largest = Integer.MIN_VALUE;
         int Smallest = Integer.MAX_VALUE;
@@ -24,6 +27,7 @@ public class Main {
         return largest;
     }
 
+    //linear Search
     public static int linearSearch(int numbers[], int key){
         for(int i = 0; i<numbers.length; i++){
             if(numbers[i]==key){
