@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 import java.util.*;
 
 public class Main {
@@ -25,6 +26,25 @@ public class Main {
         }
         System.out.println("Total Pair = "+ tp);
     }
+
+    //print subarray--------------- subarray is a Continuous part of array
+    public static void printSubArray(int numbers[]){
+        int totalSubArr=0;
+        for(int i = 0; i<numbers.length; i++){
+            int start = i;
+            for(int j = i; j<numbers.length; j++){
+                int end = j;
+                for(int k=start;k<=end; k++){
+                    System.out.print(numbers[k]+" ");
+                    totalSubArr++;
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("Total Subarrays = " + totalSubArr);
+    }
+
 
     // Reverse an Array--------------
 
@@ -137,8 +157,10 @@ public class Main {
         // System.out.println();
 
 //-------------------------------------------------------
-printPairs(numbers);
+        // printPairs(numbers);
 
+//------------------------------------------------
+        printSubArray(numbers);
 
     }
 }
